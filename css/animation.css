@@ -1,0 +1,385 @@
+
+.b1 {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: #097FB8;
+    animation: move1 7s infinite;
+    /*animation-fill-mode:forwards;*/
+    z-index: 5;
+}
+
+
+
+
+
+
+.b2 {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: #097FB8;
+    animation: move2 7s infinite;
+    z-index: 5;
+}
+
+.b3 {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: #097FB8;
+    animation: move3 10s infinite;
+    z-index: 5;
+}
+
+@keyframes move1 {
+
+    from {
+        left: -1%;
+        bottom: 30%;
+        width: 5px;
+        height: 5px;
+        opacity:0;
+        border-radius: 50%;
+        /*border: 1px solid #097FB8;*/
+
+    }
+    20% {
+        opacity: 0.1;
+    }
+    to {
+        left: 500px;
+        bottom: -700px;
+        width: 700px;
+        height: 700px;
+        opacity: 0;
+        border-radius: 50%;
+        /*border: 100px solid #097FB8;*/
+    }
+}
+
+@keyframes move2 {
+    from {
+        left: 5%;
+        bottom: 30%;
+        width: 5px;
+        height: 5px;
+        opacity: 0;
+        border-radius: 50%;
+        border: 1px solid #097FB8;
+
+    }
+
+    20% {
+        opacity: 0.1;
+    }
+
+    to {
+        left: -1000px;
+        bottom: -700px;
+        width: 700px;
+        height: 700px;
+        opacity: 0;
+        border-radius: 50%;
+        /*border: 100px solid #097FB8;*/
+
+    }
+}
+
+@keyframes move3 {
+    from {
+        left: 0;
+        bottom: 0;
+        width: 5%;
+        height: 60%;
+        opacity: 1;
+
+    }
+
+    to {
+        left: 5%;
+        bottom: 5%;
+        width: 50%;
+        height: 600%;
+        opacity: 1;
+    }
+}
+
+.ease b {
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    transition-delay: 0.5s;
+
+}
+
+.steps:after {
+    content: "steps(10,end)";
+}
+
+.b1:nth-child(2) {
+    animation-delay: .1s;
+}
+
+.b1:nth-child(3) {
+    animation-delay: .2s;
+}
+
+.b1:nth-child(4) {
+    animation-delay: .3s;
+}
+
+.b1:nth-child(5) {
+    animation-delay: .4s;
+}
+
+.b1:nth-child(6) {
+    animation-delay: .5s;
+}
+
+.b1:nth-child(7) {
+    animation-delay: .6s;
+}
+
+.b1:nth-child(8) {
+    animation-delay: .7s;
+}
+
+.b1:nth-child(9) {
+    animation-delay: .8s;
+}
+
+.b1:nth-child(10) {
+    animation-delay: .9s;
+}
+
+/*.b2:nth-child(1) {animation-delay:3.0s;}*/
+.b2:nth-child(2) {
+    animation-delay: 3.1s;
+}
+
+.b2:nth-child(3) {
+    animation-delay: 3.2s;
+}
+
+.b2:nth-child(4) {
+    animation-delay: 3.3s;
+}
+
+.b2:nth-child(5) {
+    animation-delay: 3.4s;
+}
+
+.b2:nth-child(6) {
+    animation-delay: 3.5s;
+}
+
+.b2:nth-child(7) {
+    animation-delay: 3.6s;
+}
+
+.b2:nth-child(8) {
+    animation-delay: 3.7s;
+}
+
+.b2:nth-child(9) {
+    animation-delay: 3.8s;
+}
+
+.b2:nth-child(10) {
+    animation-delay: 3.9s;
+}
+
+/*анимация с бергамо*/
+
+.circle:before {
+    -webkit-animation: circleanim 3s ease-out infinite;
+    animation: circleanim 3s ease-out infinite;
+    background: #097FB8;
+    -webkit-transform: scale(.1);
+    transform: scale(.1);
+    margin: -40px 0 0 -40px;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    content: "";
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    z-index: 0;
+}
+
+
+
+.circle2:before {
+    -webkit-animation: circleanim 3s ease-out infinite;
+    animation: circleanim 3s ease-out infinite;
+    animation-delay: 2s;
+    background: #097FB8;
+    -webkit-transform: scale(.1);
+    transform: scale(.1);
+    margin: -40px 0 0 -40px;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    content: "";
+    opacity: 0;
+    left: 63%;
+    top: 50%;
+    z-index: 0;
+}
+
+.circle3:before {
+    -webkit-animation: circleanim 3s ease-out infinite;
+    animation: circleanim 3s ease-out infinite;
+    animation-delay: 2s;
+    background: #097FB8;
+    -webkit-transform: scale(.1);
+    transform: scale(.1);
+    margin: -40px 0 0 -40px;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    content: "";
+    opacity: 0;
+    left: 37%;
+    top: 50%;
+    z-index: 0;
+}
+
+
+.circle4:before {
+    -webkit-animation: circleanim 3s ease-out infinite;
+    animation: circleanim 3s ease-out infinite;
+    animation-delay: 2s;
+    background: #097FB8;
+    -webkit-transform: scale(.1);
+    transform: scale(.1);
+    margin: -40px 0 0 -40px;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    content: "";
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    z-index: 0;
+}
+
+
+.circle5:before {
+    -webkit-animation: circleanim 3s ease-out infinite;
+    animation: circleanim 3s ease-out infinite;
+    animation-delay: 2s;
+    background: #097FB8;
+    -webkit-transform: scale(.1);
+    transform: scale(.1);
+    margin: -40px 0 0 -40px;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    content: "";
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    z-index: 0;
+}
+
+@-webkit-keyframes circleanim {
+    0% {
+        -webkit-transform: scale(.1);
+        transform: scale(.1);
+        opacity: 0
+    }
+    50% {
+        opacity: 0.5
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .circle:before {
+
+        margin: -20px 0 0 -20px;
+
+        height: 40px;
+        width: 40px;
+
+        left: 25%;
+        top: 50%;
+    }
+
+
+
+    .circle2:before {
+
+        margin: -20px 0 0 -20px;
+
+        height: 40px;
+        width: 40px;
+
+        left: 34%;
+        top: 50%;
+    }
+
+    .circle3:before {
+
+        margin: -20px 0 0 -20px;
+
+        height: 40px;
+        width: 40px;
+
+        left: 21%;
+        top: 50%;
+    }
+
+
+    .circle4:before {
+
+        margin: -20px 0 0 -20px;
+
+        height: 40px;
+        width: 40px;
+
+        left: 25%;
+        top: 50%;
+    }
+
+
+    .circle5:before {
+
+        margin: -20px 0 0 -20px;
+
+        height: 40px;
+        width: 40px;
+
+        left: 25%;
+        top: 50%;
+    }
+
+
+
+
+}
